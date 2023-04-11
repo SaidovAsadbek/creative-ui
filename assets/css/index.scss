@@ -1,10 +1,10 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  list-style-type: none;
-  text-decoration: none;
-  outline: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    outline: none;
 }
 
 $bs-blue: #63b3ed;
@@ -51,11 +51,11 @@ $bs-body-color-rgb: 103, 116, 142;
 $bs-body-bg-rgb: 255, 255, 255;
 $bs-font-sans-serif: "Open Sans";
 $bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-  "Courier New", monospace;
+    "Courier New", monospace;
 $bs-gradient: linear-gradient(
-  180deg,
-  hsla(0, 0%, 100%, 0.15),
-  hsla(0, 0%, 100%, 0)
+    180deg,
+    hsla(0, 0%, 100%, 0.15),
+    hsla(0, 0%, 100%, 0)
 );
 $bs-body-font-family: $bs-font-sans-serif;
 $bs-body-font-size: 1rem;
@@ -76,39 +76,90 @@ $bs-code-color: #d63384;
 $bs-highlight-bg: #fcf8e3;
 
 body {
-  font-family: $bs-body-font-family;
-  font-size: $bs-body-font-size;
-  color: $bs-body-color;
-  background-color: $bs-body-bg;
-  font-weight: 400;
-  line-height: 1.6;
+    font-family: $bs-body-font-family;
+    font-size: $bs-body-font-size;
+    color: $bs-body-color;
+    background-color: $bs-body-bg;
+    font-weight: 400;
+    line-height: 1.6;
 }
 
 .z-1111 {
-  z-index: 1111;
+    z-index: 1111;
 }
 
 .blur {
-  box-shadow: inset 0 0 2px #fefefed1;
-  -webkit-backdrop-filter: saturate(200%) blur(30px);
-  backdrop-filter: saturate(200%) blur(30px);
-  background-color: hsla(0, 0%, 100%, 0.8) !important;
+    box-shadow: inset 0 0 2px #fefefed1;
+    -webkit-backdrop-filter: saturate(200%) blur(30px);
+    backdrop-filter: saturate(200%) blur(30px);
+    background-color: hsla(0, 0%, 100%, 0.8) !important;
 }
 
 .blur.blur-rounded {
-  border-radius: 40px;
+    border-radius: 40px;
 }
 
 .shadow {
-  box-shadow: 0 0.3125rem 0.625rem 0 rgba(0, 0, 0, 0.12) !important;
+    box-shadow: 0 0.3125rem 0.625rem 0 rgba(0, 0, 0, 0.12) !important;
 }
 
 .font-weight-bolder {
-  font-weight: 700;
+    font-weight: 700;
 }
 
 .navbar-brand {
-  color: #344767;
-  font-size: 14px;
-  letter-spacing: 0.025rem;
+    color: #344767;
+    font-size: 14px;
+    letter-spacing: 0.025rem;
+}
+
+.navbar-brand:hover {
+    color: #344767;
+}
+
+.navbar .nav-link {
+    color: #344767;
+    padding: 0.5rem 1rem;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.btn.btn-rounded {
+    border-radius: 1.875rem;
+}
+
+.bg-gradient-primary {
+    background-image: linear-gradient(310deg, #7928ca, #ff0080);
+}
+
+.btn-sm.bg-gradient-primary:hover {
+    background-color: #cb0c9f;
+    border-color: #cb0c9f;
+    box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.09),
+        0 2px 3px -1px rgba(0, 0, 0, 0.07);
+    transform: scale(1.02);
+}
+
+.navbar .btn-sm {
+    color: $bs-white;
+    box-shadow: 0 4px 7px -1px rgba(0, 0, 0, 0.11),
+        0 2px 4px -1px rgba(0, 0, 0, 0.07);
+    background-size: 150%;
+    background-position-x: 25%;
+    transition: all 0.15s ease-in;
+    font-weight: 700;
+    font-size: 11px;
+    display: inline-block;
+    padding: 5px 22px;
+}
+
+.page-header {
+    background-image: url("../images/header/curved1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.min-vh-75 {
+    min-height: 75vh;
 }
