@@ -24,14 +24,14 @@
 
 <body>
 
-    <div class="container position-sticky z-1111">
+    <div class="container position-fixed z-1111">
         <nav class="navbar navbar-expand-lg my-3 mx-4 blur blur-rounded shadow py-2">
             <div class="container-fluid">
                 <a class="navbar-brand font-weight-bolder ms-sm-3" href="#">Soft UI PRO</a>
 
                 <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item dropdown">
+                        <li class="nav-item dropdown dropdown-hover">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 Pages
@@ -45,10 +45,10 @@
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Account
+                        <li class="nav-item dropdown dropdown-hover">
+                            <a class=" nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Account
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
@@ -59,10 +59,10 @@
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Blocks
+                        <li class="nav-item dropdown dropdown-hover">
+                            <a class=" nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Blocks
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
@@ -73,10 +73,10 @@
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Docs
+                        <li class="nav-item dropdown dropdown-hover">
+                            <a class=" nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Docs
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
@@ -102,7 +102,37 @@
 
     <header class="header" id="header">
         <div class="page-header min-vh-75 position-relative">
+            <span class="mask bg-gradient-primary"></span>
+            <div class="container position-relative z-1">
+                <div class="row">
+                    <div class="col-lg-7 text-center mx-auto">
+                        <h1 class="text-2xl text-white font-weight-bolder pt-3 mt-n5">Soft UI Design System Pro</h1>
+                        <p class="lead text-white mt-3 fw-normal">Simple and innovative Web UI Kit built on top of
+                            Bootstrap 5.
+                            <br>
+                            Join over 1.4 million developers around the world.
+                        </p>
+                    </div>
+                </div>
+            </div>
 
+            <div class="position-absolute w-100 z-1 bottom-0">
+                <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 24 150 40" preserveAspectRatio="none" shape-rendering="auto">
+                    <defs>
+                        <path id="gentle-wave"
+                            d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+                    </defs>
+                    <g class="moving-waves">
+                        <use xlink:href="#gentle-wave" x="48" y="-1" fill="rgba(255,255,255,0.40"></use>
+                        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.35)"></use>
+                        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.25)"></use>
+                        <use xlink:href="#gentle-wave" x="48" y="8" fill="rgba(255,255,255,0.20)"></use>
+                        <use xlink:href="#gentle-wave" x="48" y="13" fill="rgba(255,255,255,0.15)"></use>
+                        <use xlink:href="#gentle-wave" x="48" y="16" fill="rgba(255,255,255,0.95"></use>
+                    </g>
+                </svg>
+            </div>
         </div>
     </header>
 
